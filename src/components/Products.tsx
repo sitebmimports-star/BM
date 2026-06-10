@@ -139,7 +139,7 @@ export default function Products({ selectedCategory, onSelectCategory }: Product
         {/* Main Heading for unified Category catalog */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs font-semibold uppercase tracking-widest text-[#0071e3] mb-3 block">
-            Catálogo Oficial Elegante
+            Catálogo Oficial
           </span>
           <motion.h2
             initial={{ opacity: 0, y: 15 }}

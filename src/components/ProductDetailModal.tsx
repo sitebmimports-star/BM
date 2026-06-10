@@ -13,7 +13,7 @@ import iphone15Video from '../assets/videos/iphone 15.mp4';
 // @ts-ignore
 import iphone14Video from '../assets/videos/iphone 14.mp4';
 // @ts-ignore
-import iphone13Video from '../assets/videos/iphone 14.mp4';
+import iphone13Video from '../assets/videos/iphone 13.mp4';
 // @ts-ignore
 import iphone12Video from '../assets/videos/iphone 12.mp4';
 
