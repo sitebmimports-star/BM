@@ -9,6 +9,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>('inicio');
@@ -85,6 +86,8 @@ export default function App() {
 
       {/* Footer Navigation, Copyright, Disclaimers */}
       <Footer onNavigate={handleCustomNavigation} />
+
+      <FloatingWhatsApp />
     </div>
   );
 }
