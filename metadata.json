@@ -1,0 +1,6 @@
+{
+  "name": "BM Imports",
+  "description": "Website premium para venda de iPhones, MacBooks, iPads, Apple Watches e AirPods novos e seminovos com garantia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
