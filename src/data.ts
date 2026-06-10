@@ -47,37 +47,37 @@ export const CATEGORIAS = [
     id: 'iphone',
     name: 'IPhone',
     description: 'Modelos novos e seminovos com tecnologia de câmera de ponta.',
-    imageUrl: '/src/assets/images/iphone 17 capa.png',
+    imageUrl: '/images/iphone 17 capa.png',
   },
   {
     id: 'ipad',
     name: 'IPad',
     description: 'Produtividade, estudos e criação artística com a melhor tela portátil.',
-    imageUrl: '/src/assets/images/ipad capa.png',
+    imageUrl: '/images/ipad capa.png',
   },
   {
     id: 'macbook',
     name: 'Mac & MacBook',
     description: 'Desempenho portátil e desktop definitivo. MacBooks, iMac e Mac Mini.',
-    imageUrl: '/src/assets/images/maccapa.png',
+    imageUrl: '/images/maccapa.png',
   },
   {
     id: 'watch',
     name: 'Apple Watch',
     description: 'Conectividade, saúde e monitoramento de atividades físicas no seu pulso.',
-    imageUrl: '/src/assets/images/watchcaps.png',
+    imageUrl: '/images/watchcaps.png',
   },
   {
     id: 'airpods',
     name: 'AirPods & Som',
     description: 'Abafamento inteligente, som imersivo de alta definição e caixas JBL.',
-    imageUrl: '/src/assets/images/fones capa.png',
+    imageUrl: '/images/fones capa.png',
   },
   {
     id: 'acessorios',
     name: 'Acessórios & Consoles',
     description: 'Carregadores de alta velocidade, cabos, capinhas, películas e videogame PS5.',
-    imageUrl: '/src/assets/images/acessorios.png',
+    imageUrl: '/images/acessorios.png',
   },
 ];
 
@@ -91,7 +91,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/linha 17.png',
+    imageUrl: '/images/linha 17.png',
     specs: [
       'Modelos disponíveis na BM Imports: IPhone 17, 17 Plus, 17 Pro, 17 Pro Max',
       'Inovador processador Apple A19 / A19 Pro com poder de processamento neural focado em soluções nativas de IA',
@@ -115,7 +115,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% / Saúde sob Consulta',
     warranty: 'Até 1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/linha 16.png',
+    imageUrl: '/images/linha 16.png',
     specs: [
       'Modelos disponíveis na BM Imports: IPhone 16, 16 Plus, 16 Pro, 16 Pro Max',
       'Inovador botão capacitivo de Controle de Câmera na lateral com resposta tátil instantânea',
@@ -139,7 +139,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '90% a 100% (Sob Consulta)',
     warranty: 'Garantia Oficial Apple ou BM Imports',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/iphones 15.png',
+    imageUrl: '/images/iphones 15.png',
     specs: [
       'Modelos disponíveis na BM Imports: IPhone 15, 15 Plus, 15 Pro, 15 Pro Max',
       'Inovadora porta de conexão universal USB-C para carregamento rápido e transferência ativa de arquivos',
@@ -163,7 +163,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '85% a 100% (Sob Consulta)',
     warranty: 'Garantia de 3 meses da BM Imports',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/iphone14.png',
+    imageUrl: '/images/iphone14.png',
     specs: [
       'Modelos disponíveis na BM Imports: IPhone 14, 14 Plus, 14 Pro, 14 Pro Max',
       'Excelente tela de altíssimo brilho com recursos Always-On Display nos modelos Pro',
@@ -187,7 +187,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Novo)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/ipad pro.png',
+    imageUrl: '/images/ipad pro.png',
     specs: [
       'Inovador processador Apple M4 de nova geração',
       'Tela espetacular com tecnologia Ultra Retina XDR OLED',
@@ -211,7 +211,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/ipad air.png',
+    imageUrl: '/images/ipad air.png',
     specs: [
       'Processador Apple M2 de altíssima velocidade operacional',
       'Tela Liquid Retina brilhante de alta fidelidade de cores',
@@ -235,7 +235,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/MAC PRO 14.png',
+    imageUrl: '/images/MAC PRO 14.png',
     specs: [
       'Opções de Armazenamento de alto nível disponíveis: 256GB, 512GB ou 1TB SSD',
       'Excelente processador M3 Pro que oferece extrema eficiência térmica e desempenho extraordinário',
@@ -258,7 +258,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '97% (Baixos Ciclos)',
     warranty: 'Garantia de 3 meses da BM Imports',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/MAC AIR M2.png',
+    imageUrl: '/images/MAC AIR M2.png',
     specs: [
       'Opções de Armazenamento SSD: 256 GB (capacidade padrão de entrada), 512 GB ou 1 TB SSD',
       'Excelente processador Apple M2 que oferece extrema eficiência térmica e desempenho silencioso',
@@ -281,7 +281,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Alimentação Direta (N/A)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/imac.png',
+    imageUrl: '/images/imac.png',
     specs: [
       'Opções Oficiais organizadas por Especificação de SSD da fabricante: 256GB, 512GB ou 1TB',
       'Espetacular tela Retina de 24 polegadas com resolução 4.5K nítida e mais de 1 bilhão de cores vivas',
@@ -303,7 +303,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Alimentação Direta (N/A)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/mac mini m2.png',
+    imageUrl: '/images/mac mini m2.png',
     specs: [
       'Armazenamento SSD de alta performance de 256GB, 512GB ou 1TB',
       'Gabinete ultra-resistente e compacto perfeito para setups modernos de trabalho e alta produtividade',
@@ -324,7 +324,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/watch ultra.png',
+    imageUrl: '/images/watch ultra.png',
     specs: [
       'Caixa ultra-resistente em Titânio de alta resistência contra impactos (Tamanho único de 49mm)',
       'Tela brilhante de retina de até 3000 nits para visualização sob sol forte',
@@ -348,7 +348,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '96%',
     warranty: 'Garantia da Loja ativa por 3 meses',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/watch 9.png',
+    imageUrl: '/images/watch 9.png',
     specs: [
       'Disponível nos tamanho 41mm and 45mm com GPS + Cellular integrados',
       'Poderoso processador Apple S9 SiP com fluidez superior',
@@ -373,7 +373,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '85% a 100% (Sob Consulta)',
     warranty: 'Garantia da Loja ativa por 3 meses',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/iphone 13.png',
+    imageUrl: '/images/iphone 13.png',
     specs: [
       'Modelos disponíveis na BM Imports: IPhone 13 Mini, IPhone 13, 13 Pro, 13 Pro Max',
       'Espetacular tela OLED Super Retina XDR com pretos perfeitos e legibilidade sob o sol',
@@ -397,7 +397,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '82% a 100% (Sob Consulta)',
     warranty: 'Garantia de 3 meses da BM Imports',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/iphone 12.png',
+    imageUrl: '/images/iphone 12.png',
     specs: [
       'Modelos disponíveis na BM Imports: IPhone 12 Mini, IPhone 12, 12 Pro, 12 Pro Max',
       'Design icônico atemporal com bordas retas e escudo protetor Ceramic Shield no visor',
@@ -421,7 +421,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/10gen.png',
+    imageUrl: '/images/10gen.png',
     specs: [
       'Design moderno com tela Liquid Retina de 10.9" de ponta a ponta',
       'Potente processador Apple A14 Bionic para ótimo desempenho multitarefa',
@@ -445,7 +445,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/MAC AIR M2.png',
+    imageUrl: '/images/MAC AIR M2.png',
     specs: [
       'Armazenamento SSD disponível de 256GB, 512GB ou 1TB',
       'Inovador chip Apple M3 de alta eficiência operacional focado em IA',
@@ -468,7 +468,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/watch se.png',
+    imageUrl: '/images/watch se.png',
     specs: [
       'Disponível nos tamanhos 40mm e 44mm com funcionalidade completa de GPS + Celular',
       'Excelente custo-benefício com recursos de treino aprimorados',
@@ -493,7 +493,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/airpods pro 3.png',
+    imageUrl: '/images/airpods pro 3.png',
     specs: [
       'Inovador chip Apple H3 com poder de processamento de áudio acústico de última geração',
       'Cancelamento de Ruído Ativo inteligente com tecnologia de som tridimensional dinâmico',
@@ -518,7 +518,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/airpods 4 cancelamento de ruido.png',
+    imageUrl: '/images/airpods 4 cancelamento de ruido.png',
     specs: [
       'Poderoso processador Apple H2 que viabiliza Cancelamento Ativo de Ruído em fone open-ear',
       'Áudio Adaptativo inteligente e Detecção de Conversa automática de alta performance',
@@ -543,7 +543,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrado)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/AIRPODS MAX.png',
+    imageUrl: '/images/AIRPODS MAX.png',
     specs: [
       'Confortável arco de fones em tela de malha respirável tecida',
       'Conchas de encaixes articulados em alumínio anodizado de luxo',
@@ -567,7 +567,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: '100% (Lacrada)',
     warranty: '1 Ano de Garantia Oficial JBL',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/JBL BOOMBOX.png',
+    imageUrl: '/images/JBL BOOMBOX.png',
     specs: [
       'Forte e encorpado som JBL Original Pro Sound com graves marcantes',
       'Incrível autonomia de bateria de até 24 horas contínuas de reprodução',
@@ -591,7 +591,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Alimentação de Tomada (N/A)',
     warranty: '',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/ps5.png',
+    imageUrl: '/images/ps5.png',
     specs: [
       'Incrível console PS5 com leitor físico de mídias de jogos em blu-ray',
       'Unidade SSD nativa de 1TB de ultra-velocidade para loadings imperceptíveis',
@@ -615,7 +615,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Bateria CR2032 inclusa',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/airtag.png',
+    imageUrl: '/images/airtag.png',
     specs: [
       'Práticos rastreadores que integram com perfeição seu chaveiro à rede Buscar da Apple',
       'Prática busca precisa acionando alto-falante integrado para emitir bips',
@@ -639,7 +639,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Acessório (N/A)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/adaptador de tomada.png',
+    imageUrl: '/images/adaptador de tomada.png',
     specs: [
       'Carregamento ultra-rápido de alto nível e proteção ativa contra sobrecorrente',
       'Compatível com toda a linha de iPhones, iPads e relógios Apple',
@@ -663,7 +663,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Acessório (N/A)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/cabo c e ligh.png',
+    imageUrl: '/images/cabo c e ligh.png',
     specs: [
       'Cabo ultra-resistente fabricado para recarga e transferência de arquivos',
       'Certificação MFi oficial garantindo pleno funcionamento pós atualizações de sistema',
@@ -686,7 +686,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Acessório (N/A)',
     warranty: '1 Ano de Garantia Oficial Apple',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/cabo watch.png',
+    imageUrl: '/images/cabo watch.png',
     specs: [
       'Tecnologia magnética que conecta por indução no verso do relógio',
       'Mecanismo de carga de velocidade rápida compatível com Series 7 em diante',
@@ -709,7 +709,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Acessório (N/A)',
     warranty: '3 meses de Garantia da Loja',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/carregador xiaomi.png',
+    imageUrl: '/images/carregador xiaomi.png',
     specs: [
       'Potência máxima de recarga de até 33W com grande economia de energia',
       'Controle de carregamento inteligente que protege a integridade das baterias',
@@ -732,7 +732,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Acessório (N/A)',
     warranty: '3 meses de Garantia da Loja',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/capa.png',
+    imageUrl: '/images/capa.png',
     specs: [
       'Forte anel de ímãs de Neodímio internos para acoplagem magnética sem falhas',
       'Proteção contra quedas de nível militar com cantos traseiros reforçados',
@@ -755,7 +755,7 @@ export const PRODUTOS: Product[] = [
     batteryHealth: 'Acessório (N/A)',
     warranty: 'Garantia de Encaixe e Aplicação Sem Bolhas',
     priceEstimated: 'Sob Consulta',
-    imageUrl: '/src/assets/images/pelicula.png',
+    imageUrl: '/images/pelicula.png',
     specs: [
       'Vidro temperado quimicamente reforçado de dureza extrema de 9H',
       'Alta transparência e excelente deslizamento suave de toque de dedos',

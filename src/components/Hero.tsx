@@ -110,7 +110,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               <div className="absolute -inset-4 bg-radial from-gray-100/50 to-transparent blur-3xl pointer-events-none rounded-full" />
               
               <img
-                src="/src/assets/images/foto de capa bm imports.png"
+                src="/images/foto de capa bm imports.png"
                 alt="iStore Premium Apple Selection"
                 referrerPolicy="no-referrer"
                 onError={(e) => {

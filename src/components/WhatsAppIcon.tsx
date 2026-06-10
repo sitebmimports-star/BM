@@ -10,7 +10,7 @@ export default function WhatsAppIcon({ className = '', size }: WhatsAppIconProps
 
   return (
     <img
-      src="/src/assets/images/ICONE ZAP.png"
+      src="/images/ICONE ZAP.png"
       alt="WhatsApp"
       referrerPolicy="no-referrer"
       className={`shrink-0 aspect-square object-contain ${className}`}

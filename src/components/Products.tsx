@@ -41,7 +41,7 @@ export default function Products({ selectedCategory, onSelectCategory }: Product
         id: 'todos',
         name: 'Todos os Produtos',
         description: 'Explore todo o nosso catálogo de aparelhos Apple e periféricos premium.',
-        imageUrl: '/src/assets/images/todos apple.png',
+        imageUrl: '/images/todos apple.png',
       },
       ...CATEGORIAS,
     ];
