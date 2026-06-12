@@ -10,7 +10,6 @@
   <meta name="keywords" content="iPhone, Apple, MacBook, iPad, Apple Watch, AirPods, BM Imports" />
   <meta name="author" content="BM Imports" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="BM Imports" />
   <meta property="og:description" content="Catálogo premium de produtos Apple. iPhones, MacBooks, iPads, Apple Watch, AirPods e acessórios." />
@@ -18,7 +17,6 @@
   <meta property="og:url" content="https://bm-1hl7.vercel.app/" />
   <meta property="og:image" content="https://bm-1hl7.vercel.app/images/Logo%20BM%20Imports%202.png" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="BM Imports" />
   <meta name="twitter:description" content="Catálogo premium de produtos Apple." />
@@ -28,8 +26,7 @@
   <script>
     (function(w,d,s,l,i){
       w[l]=w[l]||[];
-      w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
       var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),
       dl=l!='dataLayer'?'&l='+l:'';
@@ -40,10 +37,23 @@
   </script>
   <!-- End Google Tag Manager -->
 
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1030184329434251');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
-
   <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe
@@ -55,9 +65,19 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- Meta Pixel Code (noscript) -->
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=1030184329434251&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Meta Pixel Code (noscript) -->
+
   <div id="root"></div>
 
   <script type="module" src="/src/main.tsx"></script>
-
 </body>
 </html>
