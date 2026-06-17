@@ -36,9 +36,10 @@ export default function Footer({ onNavigate }: FooterProps) {
             {/* Social Media Link Icons */}
             <div className="flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                id="btn-instagram-footer"
+                href="https://www.instagram.com/bmimportsoficial1/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-white border border-gray-150 flex items-center justify-center text-gray-400 hover:text-black hover:border-gray-300 transition-colors cursor-pointer"
                 aria-label="Acompanhe no Instagram"
               >
