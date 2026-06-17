@@ -9,11 +9,8 @@ interface FooterProps {
 }
 
 export default function Footer({ onNavigate }: FooterProps) {
-  const handleWhatsAppRedirect = () => {
-    const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
-    const url = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
-    window.open(url, '_blank', 'noreferrer');
-  };
+  const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
+  const whatsappUrl = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
 
   const handleLinkClick = (e: React.MouseEvent, id: string, cat?: string) => {
     e.preventDefault();
@@ -47,13 +44,16 @@ export default function Footer({ onNavigate }: FooterProps) {
               >
                 <Instagram className="w-4 h-4" />
               </a>
-              <button
-                onClick={handleWhatsAppRedirect}
+              <a
+                id="btn-whatsapp-hero"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-white border border-gray-150 flex items-center justify-center hover:border-gray-300 transition-colors cursor-pointer"
                 aria-label="Fale direto no WhatsApp"
               >
                 <WhatsAppIcon className="w-4.5 h-4.5" />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -131,11 +131,19 @@ export default function Footer({ onNavigate }: FooterProps) {
                   R. da Paz, 1601 - Sala 712 - Chácara Santo Antônio (Zona Sul), São Paulo - SP, 04713-002
                 </span>
               </li>
-              <li className="flex items-center gap-2.5 cursor-pointer group" onClick={handleWhatsAppRedirect}>
-                <WhatsAppIcon className="w-4 h-4" />
-                <span className="font-mono font-semibold text-gray-950 group-hover:text-green-600 transition-colors">
-                  +55 (11) 97635-9458
-                </span>
+              <li className="flex items-center gap-2.5 group">
+                <a
+                  id="btn-whatsapp-footer-contact"
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span className="font-mono font-semibold text-gray-950 group-hover:text-green-600 transition-colors">
+                    +55 (11) 97635-9458
+                  </span>
+                </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <HelpCircle className="w-4 h-4 text-gray-400 mt-0.5 shrink-0" />

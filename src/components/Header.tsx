@@ -38,11 +38,8 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
     { label: 'Contato', id: 'contato' },
   ];
 
-  const handleWhatsAppRedirect = () => {
-    const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
-    const url = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
-    window.open(url, '_blank', 'noreferrer');
-  };
+  const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
+  const whatsappUrl = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
 
   const handleMenuClick = (id: string, category?: string) => {
     onNavigate(id, category);
@@ -89,20 +86,23 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
                       transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                     />
                   )}
-                </button>
+                </a>
               );
             })}
           </nav>
 
           {/* Call To Action Button */}
           <div className="hidden md:flex">
-            <button
-              onClick={handleWhatsAppRedirect}
+            <a
+              id="btn-whatsapp-cta"
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold tracking-tight text-white bg-black hover:bg-gray-800 transition-colors uppercase rounded-full shadow-xs gap-1.5 focus:ring-2 focus:ring-offset-2 focus:ring-black cursor-pointer group"
             >
               <WhatsAppIcon className="w-3.5 h-3.5" />
               <span>Falar no WhatsApp</span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile Hamburguer Button */}
@@ -113,7 +113,7 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
               aria-expanded={isOpen}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -136,16 +136,19 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
                   className="block w-full text-left py-3 px-3 rounded-lg text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 transition-colors cursor-pointer"
                 >
                   {item.label}
-                </button>
+                </a>
               ))}
               <div className="pt-4 px-3">
-                <button
-                  onClick={handleWhatsAppRedirect}
+                <a
+                  id="btn-whatsapp-header-mobile"
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-white bg-black hover:bg-gray-850 rounded-xl gap-2 transition-colors cursor-pointer"
                 >
                   <WhatsAppIcon className="w-4 h-4" />
                   <span>Mandar Mensagem</span>
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>

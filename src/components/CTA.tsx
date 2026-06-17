@@ -3,11 +3,8 @@ import { motion } from 'motion/react';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export default function CTA() {
-  const handleWhatsAppRedirect = () => {
-    const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
-    const url = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
-    window.open(url, '_blank', 'noreferrer');
-  };
+  const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
+  const whatsappUrl = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
 
   return (
     <section id="contato" className="py-24 bg-black text-white relative overflow-hidden">
@@ -40,13 +37,16 @@ export default function CTA() {
 
           {/* Large dynamic conversion button */}
           <div className="mt-10">
-            <button
-              onClick={handleWhatsAppRedirect}
+            <a
+              id="btn-whatsapp-cta"
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 text-sm sm:text-base font-bold uppercase tracking-wider text-black bg-white hover:bg-neutral-100 transition-all rounded-full gap-3 cursor-pointer shadow-lg active:scale-98 select-none"
             >
               <WhatsAppIcon className="w-5 h-5" />
               <span>Chamar no WhatsApp</span>
-            </button>
+            </a>
           </div>
 
           {/* Micro assurance list */}

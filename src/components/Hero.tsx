@@ -8,11 +8,8 @@ interface HeroProps {
 }
 
 export default function Hero({ onNavigate }: HeroProps) {
-  const handleWhatsAppRedirect = () => {
-    const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
-    const url = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
-    window.open(url, '_blank', 'noreferrer');
-  };
+  const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
+  const whatsappUrl = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
 
   return (
     <section id="inicio" className="relative pt-24 sm:pt-32 pb-16 sm:pb-24 overflow-hidden bg-white">
@@ -65,15 +62,18 @@ export default function Hero({ onNavigate }: HeroProps) {
               >
                 <span>Conhecer produtos</span>
                 <ArrowDown className="w-4 h-4 text-white/80" />
-              </button>
+              </a>
 
-              <button
-                onClick={handleWhatsAppRedirect}
+              <a
+                id="btn-whatsapp-hero"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold tracking-wide text-gray-900 bg-white border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-all rounded-full gap-2 cursor-pointer shadow-xs active:scale-98"
               >
                 <WhatsAppIcon className="w-4 h-4" />
                 <span>Falar com especialista</span>
-              </button>
+              </a>
             </motion.div>
 
             {/* Micro stats under CTA */}
