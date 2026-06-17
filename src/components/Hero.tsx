@@ -62,7 +62,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               >
                 <span>Conhecer produtos</span>
                 <ArrowDown className="w-4 h-4 text-white/80" />
-              </a>
+              </button>
 
               <a
                 id="btn-whatsapp-hero"

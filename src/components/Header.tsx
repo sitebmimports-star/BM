@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { COMPANHIA_WHATSAPP_NUMBER, COMPANHIA_WHATSAPP_DEFAULT_MSG } from '../data';
 import Logo from './Logo';
@@ -17,12 +17,9 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 20);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -57,17 +54,19 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => handleMenuClick('inicio')}>
-             <Logo className="h-9" />
+          <div
+            className="flex-shrink-0 flex items-center cursor-pointer"
+            onClick={() => handleMenuClick('inicio')}
+          >
+            <Logo className="h-9" />
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {menuItems.map((item) => {
               const isActive = item.category
-                ? (activeSection === 'produtos' && activeCategory === item.category)
-                : (activeSection === item.id);
+                ? activeSection === 'produtos' && activeCategory === item.category
+                : activeSection === item.id;
+
               return (
                 <button
                   key={`${item.label}-${item.id}`}
@@ -86,15 +85,14 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
                       transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                     />
                   )}
-                </a>
+                </button>
               );
             })}
           </nav>
 
-          {/* Call To Action Button */}
           <div className="hidden md:flex">
             <a
-              id="btn-whatsapp-cta"
+              id="btn-whatsapp-header"
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -105,7 +103,6 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
             </a>
           </div>
 
-          {/* Mobile Hamburguer Button */}
           <div className="flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -113,12 +110,11 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
               aria-expanded={isOpen}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </a>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu Panel */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -136,8 +132,9 @@ export default function Header({ onNavigate, activeSection, activeCategory }: He
                   className="block w-full text-left py-3 px-3 rounded-lg text-sm font-medium text-gray-700 hover:text-black hover:bg-gray-50 transition-colors cursor-pointer"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
+
               <div className="pt-4 px-3">
                 <a
                   id="btn-whatsapp-header-mobile"

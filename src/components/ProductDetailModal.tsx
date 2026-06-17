@@ -513,7 +513,7 @@ export default function ProductDetailModal({ product, onClose }: ProductDetailMo
             aria-label="Fechar modal"
           >
             <X className="w-5 h-5" />
-          </a>
+          </button>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
             
@@ -604,7 +604,7 @@ export default function ProductDetailModal({ product, onClose }: ProductDetailMo
                           }`}
                         >
                           {model.name}
-                        </a>
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -672,7 +672,7 @@ export default function ProductDetailModal({ product, onClose }: ProductDetailMo
                                     <span className="w-1.5 h-1.5 rounded-full bg-white mix-blend-difference" />
                                   </span>
                                 )}
-                              </a>
+                              </button>
                             ))}
                           </div>
 
@@ -878,7 +878,7 @@ export default function ProductDetailModal({ product, onClose }: ProductDetailMo
                   >
                     <WhatsAppIcon className="w-4.5 h-4.5" />
                     <span>GARANTIR {(isIphoneLine && activeModel ? activeModel.name : product.name).toUpperCase()} PELO WHATSAPP</span>
-                  </a>
+                  </button>
                 </div>
 
               </div>
