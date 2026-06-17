@@ -45,7 +45,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                id="btn-whatsapp-hero"
+                id="btn-whatsapp-footer"
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
