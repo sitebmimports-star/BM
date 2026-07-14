@@ -1,6 +1,37 @@
 import { Product, Differential, Testimonial, FAQItem } from './types';
 
-export const COMPANHIA_WHATSAPP_NUMBER = '5511976359458'; // Número real da loja BM Imports
+const COMPANHIA_WHATSAPP_NUMBERS = [
+  '5511976359458',
+  '5511932651306',
+];
+
+function getAssignedWhatsAppNumber(): string {
+  if (typeof window === 'undefined') {
+    return COMPANHIA_WHATSAPP_NUMBERS[0];
+  }
+
+  const storageKey = 'bm-imports-whatsapp-assigned';
+  const existingNumber = window.sessionStorage.getItem(storageKey);
+
+  if (
+    existingNumber &&
+    COMPANHIA_WHATSAPP_NUMBERS.includes(existingNumber)
+  ) {
+    return existingNumber;
+  }
+
+  const selectedNumber =
+    COMPANHIA_WHATSAPP_NUMBERS[
+      Math.floor(Math.random() * COMPANHIA_WHATSAPP_NUMBERS.length)
+    ];
+
+  window.sessionStorage.setItem(storageKey, selectedNumber);
+
+  return selectedNumber;
+}
+
+export const COMPANHIA_WHATSAPP_NUMBER =
+  getAssignedWhatsAppNumber(); // Número real da loja BM Imports
 export const COMPANHIA_WHATSAPP_DEFAULT_MSG = 'Olá! Gostaria de falar com um especialista sobre as soluções em tecnologia e aparelhos disponíveis na BM Imports.';
 
 export const DIFERENCIAIS: Differential[] = [
