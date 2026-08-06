@@ -1,11 +1,29 @@
 import { Product, Differential, Testimonial, FAQItem } from './types';
 
+// ===============================
+// CONFIGURAÇÃO WHATSAPP BM IMPORTS
+// ===============================
+
+// true = divide os leads entre os dois números
+// false = utiliza apenas o número principal
+const ENABLE_WHATSAPP_ROTATION = false;
+
+// Número principal
+const PRIMARY_WHATSAPP = '5511932651306';
+
+// Número secundário
+const SECONDARY_WHATSAPP = '5511976359458';
+
 const COMPANHIA_WHATSAPP_NUMBERS = [
-  '5511976359458',
-  '5511932651306',
+  PRIMARY_WHATSAPP,
+  SECONDARY_WHATSAPP,
 ];
 
 function getAssignedWhatsAppNumber(): string {
+  if (!ENABLE_WHATSAPP_ROTATION) {
+    return PRIMARY_WHATSAPP;
+  }
+
   if (typeof window === 'undefined') {
     return COMPANHIA_WHATSAPP_NUMBERS[0];
   }
