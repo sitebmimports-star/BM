@@ -1,16 +1,20 @@
-import React from 'react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { COMPANHIA_WHATSAPP_NUMBER, COMPANHIA_WHATSAPP_DEFAULT_MSG } from '../data';
 
 export default function FloatingWhatsApp() {
+  const encodedText = encodeURIComponent(COMPANHIA_WHATSAPP_DEFAULT_MSG);
+  const whatsappUrl = `https://wa.me/${COMPANHIA_WHATSAPP_NUMBER}?text=${encodedText}`;
+
   return (
-    <a id="btn-whatsapp-floating"
-      href="https://wa.me/5511976359458?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20as%20solu%C3%A7%C3%B5es%20em%20tecnologia%20e%20aparelhos%20dispon%C3%ADveis%20na%20BM%20Imports."
+    <a
+      id="btn-whatsapp-floating"
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Falar com a BM Imports no WhatsApp"
-      className="fixed bottom-5 right-5 z-[9999] flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] shadow-2xl transition-all duration-300 hover:scale-110"
+      aria-label="Falar com a BM Imports pelo WhatsApp"
+      className="fixed bottom-6 right-6 z-[9999] w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105"
     >
-      <WhatsAppIcon className="h-9 w-9" />
+      <WhatsAppIcon className="w-8 h-8" />
     </a>
   );
 }
